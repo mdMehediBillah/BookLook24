@@ -74,6 +74,11 @@ app.use(errorHandler);
 // Server Listener
 const port = process.env.PORT || 8000;
 
+// base endpoint
+app.get("/", (req, res) => {
+  res.send("Welcome to the Bookshelf API");
+});
+
 // Invalid endpoint
 app.get("/*", (req, res) => {
   res.send("invalid endpoint!");
