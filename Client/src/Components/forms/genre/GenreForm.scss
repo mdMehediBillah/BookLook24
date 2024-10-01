@@ -1,0 +1,60 @@
+@import "../../../styles/Variables.scss";
+@import "../../../styles/Mixins.scss";
+
+.genre-modal {
+  @include modal;
+
+  .genre-popup-box {
+    @include popupBox;
+    width: 50%;
+    padding: 2rem;
+
+    .close-modal {
+      @include closeModal;
+    }
+
+    .genre-form-title {
+      @include subTitle;
+    }
+
+    .genre-form {
+      @include flexColumn;
+
+      .book-genre {
+        font-size: $nfs;
+      }
+
+      .input-container {
+        @include inputContainer;
+
+        .input-icon {
+          @include inputIcon;
+        }
+
+        .input-field {
+          @include inputField;
+        }
+
+        .input-label {
+          @include inputLabel;
+        }
+
+        .input-highlight {
+          @include inputHighlight;
+        }
+
+        .input-field:focus + .input-label {
+          @include focusInputFieldAndInputLabel;
+        }
+
+        .input-field:focus + .input-label + .input-highlight {
+          width: 100%;
+        }
+      }
+
+      .genre-btn {
+        @include button1;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.hidden {
+  display: none;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}

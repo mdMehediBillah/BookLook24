@@ -1,0 +1,63 @@
+@import "../../../styles/Variables.scss";
+@import "../../../styles/Mixins.scss";
+
+.book-modal {
+  @include modal;
+
+  .book-popup-box {
+    @include popupBox;
+    padding: 2rem;
+
+    .close-modal {
+      @include closeModal;
+    }
+
+    .book-form-title {
+      @include subTitle;
+    }
+
+    .book-form {
+      @include flexColumn;
+      position: relative;
+
+      .input-containers-wrapper {
+        @include twoGridTemplateEqualColumns;
+      }
+
+      .input-container {
+        @include inputContainer;
+
+        .input-icon {
+          @include inputIcon;
+        }
+
+        .input-field {
+          color: $black;
+          @include inputField;
+          
+        }
+
+        .input-label {
+          @include inputLabel;
+        }
+
+        .input-highlight {
+          @include inputHighlight;
+        }
+      }
+
+      .book-btn {
+        @include button1;
+      }
+    }
+
+    .add-author {
+      position: absolute;
+      right: 1rem;
+      bottom: 2rem;
+      display: flex;
+      justify-content: flex-end;
+      @include button2;
+    }
+  }
+}

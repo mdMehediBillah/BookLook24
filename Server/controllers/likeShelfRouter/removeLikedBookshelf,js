@@ -1,0 +1,21 @@
+import createError from "http-errors";
+import User from "../../models/user/index.js";
+import Bookshelf from "../../models/bookshelf/index.js";
+
+export const removeLikedBookshelf = async (req, res) => {
+  const { userId, shelfId } = req.params;
+
+  try {
+    await User.findByIdAndUpdate(
+      userId,
+      { $pull: { likedBookshelves: shelfId } },
+      { new: true }
+    );
+
+    res
+      .status(200)
+      .json({ message: "Bookshelf removed from liked bookshelves" });
+  } catch (error) {
+    res.status(500).json({ message: "Failed to remove liked bookshelf" });
+  }
+};

@@ -1,0 +1,22 @@
+
+
+.time-picker-input .react-time-picker__wrapper {
+  border: none;
+}
+
+.react-time-picker__clock {
+  transform: scale(0.6); /* Adjusting the scale of clock */
+}
+
+.react-time-picker__clock .react-clock__face {
+  border: none; /* Removing inner border */
+}
+
+.react-time-picker__inputGroup {
+  border: none;
+}
+
+/* Hiding the clear button from the TimePicker component */
+.react-time-picker__clear-button {
+  display: none;
+}

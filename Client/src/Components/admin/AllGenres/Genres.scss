@@ -1,0 +1,31 @@
+@import "../../../styles/Variables.scss";
+@import "../../../styles/Mixins.scss";
+
+.genres-table-container {
+  .genres-table-title {
+    @include subTitle;
+  }
+
+  .add-new-genre {
+    @include flexSpaceBetween;
+
+    .add-new-genre-title {
+      @include subTitle;
+    }
+
+    .add-new-genre-btn {
+      @include button2;
+    }
+  }
+}
+.action-wrapper {
+  @include flexRow;
+
+  .delete {
+    @include deleteIcon;
+  }
+}
+
+.MuiDataGrid-cell {
+  @include flexCenter;
+}

@@ -1,0 +1,31 @@
+@import "../../../styles/Variables.scss";
+@import "../../../styles/Mixins.scss";
+
+.donated-books-container {
+  .donated-books-title {
+    @include subTitle;
+  }
+
+  .add-new-donated-book {
+    @include flexSpaceBetween;
+
+    .add-new-donated-book-title {
+      @include subTitle;
+    }
+
+    .add-new-donated-book-btn {
+      @include button2;
+    }
+  }
+}
+.action-wrapper {
+  @include flexRow;
+
+  .delete {
+    @include deleteIcon;
+  }
+}
+
+.MuiDataGrid-cell {
+  @include flexCenter;
+}

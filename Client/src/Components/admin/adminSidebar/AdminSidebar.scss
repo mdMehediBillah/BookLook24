@@ -1,0 +1,53 @@
+@import "../../../styles/Variables.scss";
+@import "../../../styles/Mixins.scss";
+
+.user-profile-sidebar-wrapper {
+  min-height: 100vh;
+  border-radius: 0;
+
+  .user-profile-sidebar-title {
+    @include subTitle;
+  }
+
+  .user-profile-sidebar-item {
+    @include flexRow;
+    align-items: center;
+    font-size: $nfs;
+    padding: 0.7rem 0;
+    // margin-bottom: 1rem;
+    border-bottom: 1px solid #d7e2ee;
+    cursor: pointer;
+
+    &:hover {
+      color: $blue;
+      background: $userSidebar-hover;
+      border-radius: $radius;
+    }
+
+    .active-text {
+      color: $red;
+    }
+
+    .passive-text {
+      color: $black;
+
+      &:hover {
+        color: $red;
+      }
+    }
+
+    .active-icon {
+      color: $red;
+      font-size: $afs;
+    }
+
+    .passive-icon {
+      color: $black;
+      font-size: $afs;
+
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+}

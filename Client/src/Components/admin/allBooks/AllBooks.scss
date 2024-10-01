@@ -1,0 +1,55 @@
+@import "../../../styles/Variables.scss";
+@import "../../../styles/Mixins.scss";
+.books-table-container {
+  .books-table-title {
+    @include subTitle;
+  }
+  .add-new-book {
+    @include flexSpaceBetween;
+    .add-new-book-title {
+      @include subTitle;
+    }
+    .add-new-book-btn {
+      @include button2;
+    }
+  }
+}
+.service-delete-confirmation-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $white;
+  padding: 2rem 2rem 3rem 2rem;
+  @include shadow1;
+  .delete-icon {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    &:hover {
+      color: $red;
+    }
+  }
+  .you-want-delete-user {
+    @include subTitle;
+  }
+  .cancel-or-confirm-delete {
+    @include flexRow;
+    gap: 1rem;
+    .confirm-delete {
+      @include button2;
+    }
+    .cancel-delete {
+      @include button2;
+    }
+  }
+}
+.action-wrapper {
+  @include flexRow;
+  .delete {
+    @include deleteIcon;
+  }
+}
+.MuiDataGrid-cell {
+  @include flexCenter;
+}

@@ -1,0 +1,50 @@
+@import "../../styles/Mixins.scss";
+@import "../../styles/Variables.scss";
+
+.book-page {
+  .book-page-container {
+    width: $desktop;
+    margin: 1rem auto;
+
+    .book-page-title {
+      @include title;
+    }
+
+    .book-wrapper {
+      @include flexRow;
+
+      .book-image {
+        .image {
+          width: 20rem;
+          height: 25rem;
+          object-fit: contain;
+        }
+      }
+
+      .book-details-wrapper {
+        .book-title {
+          @include subTitle;
+        }
+
+        .book-author {
+          @include paragraph;
+          font-size: $sfs;
+        }
+
+        .book-rating {
+          @include paragraph;
+          @include flexRow;
+          align-items: center;
+        }
+
+        .book-summary {
+          @include paragraph;
+        }
+
+        .borrow-book-btn {
+          @include button2;
+        }
+      }
+    }
+  }
+}

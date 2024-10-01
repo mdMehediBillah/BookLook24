@@ -1,0 +1,41 @@
+@import "../../../styles/Mixins.scss";
+@import "../../../styles/Variables.scss";
+
+.book-card-wrapper {
+  @include shadow1;
+  @include flexRow;
+  background-color: #e9ecef;
+
+  .book-cover-page-wrapper {
+    .image {
+      width: 30rem;
+      height: 25rem;
+      object-fit: contain;
+    }
+  }
+
+  .book-details-wrapper {
+    .book-title {
+      @include subTitle;
+    }
+
+    .book-author {
+      font-size: $sfs;
+    }
+
+    .book-rating {
+      @include flexRow;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    .book-summary {
+      @include paragraph;
+      margin-top: 1rem;
+
+      .read-more {
+        color: $red;
+      }
+    }
+  }
+}

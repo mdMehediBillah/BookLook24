@@ -1,0 +1,40 @@
+@import "../../styles/Mixins.scss";
+@import "../../styles/Variables.scss";
+
+.bookshelf-page {
+  .bookshelf-page-container {
+    width: $desktop;
+    margin: 1rem auto;
+
+    .bookshelf-page-title {
+      @include title;
+    }
+
+    .shelf-details-wrapper {
+      @include flexRow;
+      .shelf-image {
+        width: 30rem;
+        height: 35rem;
+
+        .image {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          border-radius: $radius;
+        }
+      }
+
+      .shelf-details {
+        @include shadow1;
+
+        .shelf-books {
+          @include subTitle;
+        }
+
+        .books-info {
+          @include flexColumn;
+        }
+      }
+    }
+  }
+}

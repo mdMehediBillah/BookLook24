@@ -1,0 +1,19 @@
+@import "../../styles/Mixins.scss";
+@import "../../styles/Variables.scss";
+
+.books-page {
+  .books-page-container {
+    width: $desktop;
+    margin: 1rem auto;
+
+    .books-page-title {
+      @include title;
+    }
+
+    .books-card-container {
+        @include twoGridTemplateEqualColumns;
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+  }
+}

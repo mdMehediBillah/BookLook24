@@ -1,0 +1,50 @@
+@import "../../../styles/Variables.scss";
+@import "../../../styles/Mixins.scss";
+
+.author-modal {
+  @include modal;
+
+  .author-popup-box {
+    @include popupBox;
+    width: 600px;
+    padding: 2rem;
+
+    .close-modal {
+      @include closeModal;
+    }
+
+    .author-form-title {
+      @include subTitle;
+    }
+
+    .author-form {
+      @include flexColumn;
+
+      .input-container {
+        @include inputContainer;
+
+        .input-icon {
+          @include inputIcon;
+        }
+
+        .input-field {
+          color: $black;
+          @include inputField;
+         
+        }
+
+        .input-label {
+          @include inputLabel;
+        }
+
+        .input-highlight {
+          @include inputHighlight;
+        }
+      }
+
+      .author-form-btn{
+        @include button1;
+      }
+    }
+  }
+}
