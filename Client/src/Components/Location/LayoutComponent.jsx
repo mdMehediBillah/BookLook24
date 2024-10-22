@@ -74,7 +74,7 @@ const LayoutComponent = ({
       {/* Map Container */}
       <div className="flex justify-between py-4 px-2 items-center">
         <h2
-          className={`text-xl font-bold ${
+          className={`lg:text-xl sm:text-lg font-bold ${
             theme === "light" ? "text-gray-800" : "text-gray-300"
           }`}
         >
@@ -84,7 +84,7 @@ const LayoutComponent = ({
       </div>
       <div className="relative h-1/2 md:h-full">
         {/* Search Component inside the map */}
-        <div className="absolute w-[50%] left-[25%] z-[1000] p-2 rounded">
+        <div className="absolute w-[50%] left-[25%] z-[1000] p-2 rounded ">
           <SearchComponent
             searchTerm={searchTerm}
             setSearchTerm={setSearchTerm}

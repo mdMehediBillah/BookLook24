@@ -32,16 +32,15 @@ const HomePage = () => {
       // }}
     >
       <NavigationComponent />
-
-      <section className="max-w-screen-lg mx-auto">
-        <motion.div
-          animate={{
+      {/*  animate={{
             rotate: [0],
             x: [0, 10, 0, -10, 0],
           }}
-          transition={{ delay: 1, duration: 6, repeat: Infinity }}
-        >
-          <img src={heroImg} alt="Hero image" className="w-7/12 mx-auto" />
+          transition={{ delay: 1, duration: 6, repeat: Infinity }} */}
+
+      <section className="max-w-screen-lg mx-auto">
+        <motion.div>
+          <img src={heroImg} alt="Hero image" className="w-8/12 mx-auto" />
         </motion.div>
         <motion.div
           animate={{

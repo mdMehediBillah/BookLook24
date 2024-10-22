@@ -151,20 +151,14 @@ const CreateShelfForm = () => {
       }`}
     >
       <NavigationComponent />
-      <div className="max-w-screen-lg mx-auto">
+      <div className="max-w-screen-lg mx-auto ">
         <GoBackComponent />
       </div>
       <section
         className={`flex items-center py-1 px-4 container mx-auto justify-between screen-max-lg max-w-screen-lg${
           theme === "light" ? "bg-gray-50" : "bg-gray-800"
         }`}
-      >
-        <div className="w-3/12 flex justify-end">
-          <div className="py-1 px-3 font-semibold text-gray-100">
-            <h4>Create New Bookshelf</h4>
-          </div>
-        </div>
-      </section>
+      ></section>
 
       <form
         onSubmit={handleSubmit}
@@ -174,7 +168,7 @@ const CreateShelfForm = () => {
             : "bg-gray-100 text-gray-800"
         }`}
       >
-        <h1 className="text-4xl font-bold mt-6 mb-10 text-center">
+        <h1 className="lg:text-3xl sm:text-xl font-bold mt-6 mb-10 text-center">
           Create New Bookshelf
         </h1>
 
@@ -341,7 +335,7 @@ const CreateShelfForm = () => {
           className={`w-full py-2 mt-7 px-4 ${
             theme === "dark"
               ? "bg-cyan-700 text-gray-100"
-              : "bg-cyan-900 text-black"
+              : "bg-cyan-900 text-slate-100"
           } font-bold rounded-md hover:bg-rose-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2`}
         >
           {loading ? "Creating..." : "Create Bookshelf"}
