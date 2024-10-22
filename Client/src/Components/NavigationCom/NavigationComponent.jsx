@@ -40,24 +40,24 @@ const NavigationComponent = () => {
   return (
     <>
       <div
-        className={`navbar w-full object-cover container mx-auto bg-cover bg-center bg-no-repeat ${
+        className={`navbar w-full object-cover container mx-auto bg-cover bg-center bg-no-repeat px-4 ${
           theme === "light" ? "bg-gray-50" : "bg-gray-800"
         }`}
       >
         <div className="flex-1">
-          <div className=" w-2/12 logo">
+          <div className=" lg:w-2/12 logo pl-6">
             <Link to="/" className="flex justify-center items-center gap-2">
               <GiBlackBook
-                className={`min-w-7 min-h-7 ${
+                className={`min-w-6 min-h-6 ${
                   theme === "light" ? "text-gray-800" : "text-gray-100"
                 }`}
               />
 
               <div>
-                <span className="text-rose-500 font-semibold text-2xl">
+                <span className="text-rose-500 font-semibold lg:text-2xl sm:text-xl">
                   Book
                 </span>
-                <span className="text-cyan-600 font-semibold text-2xl">
+                <span className="text-cyan-600 font-semibold lg:text-2xl sm:text-xl">
                   Look
                 </span>
               </div>
@@ -87,7 +87,7 @@ const NavigationComponent = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 sm:w-40 lg:w-52 p-2 shadow"
             >
               <Link to="/profile">
                 <li>

@@ -16,42 +16,45 @@ const FooterComponent = () => {
   return (
     <div className="bg-gray-900 min-h-48 text-white ">
       <div className="grid lg:grid-cols-2 py-10 px-4 container max-w-screen-lg mx-auto">
-        <div className="grid md:grid-cols-2  mx-auto gap-8">
-          <div className="flex flex-col gap-2">
-            <div className="flex gap-1 items-center cursor-pointer hover:scale-105 transition-transform duration-300 hover:text-cyan-100">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto p-4">
+          {/* Left side - App Store Links */}
+          <div className="flex flex-col gap-4">
+            <div className="flex gap-2 items-center cursor-pointer hover:scale-105 transition-transform duration-300 hover:text-cyan-100">
               <FaApple /> <span>Apple Store</span>
             </div>
-            <div className="flex gap-1 items-center cursor-pointer hover:scale-105 transition-transform duration-300 hover:text-cyan-100">
+            <div className="flex gap-2 items-center cursor-pointer hover:scale-105 transition-transform duration-300 hover:text-cyan-100">
               <FaGoogle /> <span>Google Store</span>
             </div>
-            <div className="flex gap-1 items-center cursor-pointer hover:scale-105 transition-transform duration-300 hover:text-cyan-100">
+            <div className="flex gap-2 items-center cursor-pointer hover:scale-105 transition-transform duration-300 hover:text-cyan-100">
               <FaAndroid /> <span>Android Store</span>
             </div>
           </div>
+
+          {/* Right side - Navigation Links */}
           <div className="">
-            <ul className="flex flex-col gap-2">
+            <ul className="flex flex-col gap-4">
               <Link to="/" onClick={() => window.scrollTo(0, 0)}>
-                <li className="flex gap-1 items-center cursor-pointer hover:scale-105 transition-transform duration-300 hover:text-cyan-100">
+                <li className="flex gap-2 items-center cursor-pointer hover:scale-105 transition-transform duration-300 hover:text-cyan-100">
                   Home
                 </li>
               </Link>
               <Link to="/about_us" onClick={() => window.scrollTo(0, 0)}>
-                <li className="flex gap-1 items-center cursor-pointer hover:scale-105 transition-transform duration-300 hover:text-cyan-100">
+                <li className="flex gap-2 items-center cursor-pointer hover:scale-105 transition-transform duration-300 hover:text-cyan-100">
                   About Us
                 </li>
               </Link>
               <Link to="/contact_us" onClick={() => window.scrollTo(0, 0)}>
-                <li className="flex gap-1 items-center cursor-pointer hover:scale-105 transition-transform duration-300 hover:text-cyan-100">
+                <li className="flex gap-2 items-center cursor-pointer hover:scale-105 transition-transform duration-300 hover:text-cyan-100">
                   Contact Us
                 </li>
               </Link>
               <Link to="/how_it_works" onClick={() => window.scrollTo(0, 0)}>
-                <li className="flex gap-1 items-center cursor-pointer hover:scale-105 transition-transform duration-300 hover:text-cyan-100">
+                <li className="flex gap-2 items-center cursor-pointer hover:scale-105 transition-transform duration-300 hover:text-cyan-100">
                   How it Works
                 </li>
               </Link>
               <Link to="/faq" onClick={() => window.scrollTo(0, 0)}>
-                <li className="flex gap-1 items-center cursor-pointer hover:scale-105 transition-transform duration-300 hover:text-cyan-100">
+                <li className="flex gap-2 items-center cursor-pointer hover:scale-105 transition-transform duration-300 hover:text-cyan-100">
                   FAQ
                 </li>
               </Link>
@@ -59,13 +62,14 @@ const FooterComponent = () => {
                 to="/terms_and_conditions"
                 onClick={() => window.scrollTo(0, 0)}
               >
-                <li className="flex gap-1 items-center cursor-pointer hover:scale-105 transition-transform duration-300 hover:text-cyan-100">
+                <li className="flex gap-2 items-center cursor-pointer hover:scale-105 transition-transform duration-300 hover:text-cyan-100">
                   Terms & Conditions
                 </li>
               </Link>
             </ul>
           </div>
         </div>
+
         <div className="">
           <h6 className="font-medium text-2xl  pb-4 cursor-default">
             Newsletter
@@ -113,18 +117,22 @@ const FooterComponent = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-evenly p-4 border-t border-white">
+      <div className="flex justify-evenly p-4 border-t border-white items-center">
         <div className=" w-2/12 logo ">
           <Link to="/" className="flex justify-center items-center gap-2">
-            <GiBlackBook className="min-w-11  min-h-11 text-cyan-200 " />
+            <GiBlackBook className="min-w-6  min-h-6 text-cyan-200 " />
             <div>
-              <span className="text-rose-400 font-semibold text-2xl">Book</span>
-              <span className="text-cyan-400 font-semibold text-2xl">Look</span>
+              <span className="text-rose-400 font-semibold lg:text-2xl sm:text-xs">
+                Book
+              </span>
+              <span className="text-cyan-400 font-semibold lg:text-2xl sm:text-xs">
+                Look
+              </span>
             </div>
           </Link>
         </div>
         <Link to="/">
-          <p className="flex  justify-center pt-2 cursor-default">
+          <p className="flex  justify-center cursor-default ">
             ©2024 booklook.com
           </p>
         </Link>

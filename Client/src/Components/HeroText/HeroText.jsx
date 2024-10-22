@@ -7,7 +7,7 @@ const HeroText = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <h1
-        className={`text-4xl font-bold ${
+        className={`lg:text-4xl sm:text-3xl font-bold ${
           theme === "light" ? "text-rose-500" : "text-cyan-300"
         }`}
       >
