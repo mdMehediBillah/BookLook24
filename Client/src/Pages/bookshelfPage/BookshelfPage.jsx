@@ -97,7 +97,7 @@ const BookshelfPage = () => {
         <div className="max-w-screen-lg mx-auto">
           <GoBackComponent />
         </div>
-        <section className="flex flex-col py-4 container mx-auto screen-max-lg max-w-screen-lg mt-6 mb-6">
+        <section className="flex flex-col py-4 container mx-auto screen-max-lg max-w-screen-lg mt-6 mb-6 p-4">
           <article
             className={`flex flex-col gap-4  mx-auto p-3 rounded-md ${
               theme === "light" ? "bg-gray-200" : "bg-gray-400"
@@ -114,15 +114,15 @@ const BookshelfPage = () => {
                 </figure>
                 <div className="flex flex-col justify-between">
                   <div>
-                    <h2 className="text-xl font-semibold">
+                    <h2 className="md:text-2xl sm:text-lg font-semibold">
                       {" "}
                       {bookshelf?.name}
                     </h2>
-                    <div className="flex items-center gap-1 text-sm">
+                    <div className="flex flex-wrap gap-1 text-sm">
                       <span>{bookshelf?.street},</span>
                       <span>{bookshelf?.city}</span>
                     </div>
-                    <div className="flex items-center gap-1 text-sm">
+                    <div className="flex  gap-1 text-sm">
                       <span>{bookshelf?.zipCode},</span>
                       <span>{bookshelf?.country}</span>
                     </div>

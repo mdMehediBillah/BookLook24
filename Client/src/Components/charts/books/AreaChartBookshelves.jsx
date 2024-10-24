@@ -55,7 +55,7 @@ const AreaChartBookshelves = ({ bookshelves, books }) => {
   // console.log("Chart Data:", chartData);
 
   return (
-    <section className="pt-5 pb-10" style={{ width: "40vw", height: "400px" }}>
+    <section className="pt-5 pb-10 sm:w-full md:w-[95%] h-72">
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart
           data={chartData}

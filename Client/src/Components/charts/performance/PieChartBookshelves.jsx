@@ -78,10 +78,7 @@ const PieChartBookshelves = ({
   };
 
   return (
-    <section
-      className="pie-chart-bookshelves pt-5 pb-10"
-      style={{ width: "24vw", height: "320px" }}
-    >
+    <section className="pie-chart-bookshelves pt-5 pb-10 w-full">
       <ResponsiveContainer width="100%" height="100%">
         <PieChart>
           <Pie

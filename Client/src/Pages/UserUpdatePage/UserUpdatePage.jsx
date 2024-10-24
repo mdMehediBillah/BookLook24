@@ -218,11 +218,11 @@ const UserUpdatePage = () => {
             </Link>
           </div>
         </div>
-        <div className="w-3/12 flex justify-end">
-          <div className="py-1 px-3 font-semibold text-white">
+        <div className="lg:w-3/12 sm:w-4/12 flex justify-end">
+          <div className="py-1 lg:px-3 sm:px-1 font-semibold text-white">
             <h4
-              className={` ${
-                theme === "light" ? "text-rose-800" : "text-gray-300"
+              className={`lg:text-lg  ${
+                theme === "light" ? "text-cyan-800" : "text-gray-300"
               }`}
             >
               Update Profile
@@ -276,7 +276,7 @@ const UserUpdatePage = () => {
           </div>
           <div className="flex flex-col items-center">
             <div className="w-full lg:w-8/12 py-2 flex flex-col items-center">
-              <h4 className="text-gray-600 font-semibold text-lg">
+              <h4 className="text-gray-600 font-semibold lg:text-lg sm:text-md">
                 Generated your Profile Image
               </h4>
               <div className="w-full lg:w-8/12 flex flex-col items-center">
@@ -298,7 +298,7 @@ const UserUpdatePage = () => {
           </div>
           <div className="flex container mx-auto min-w-[360px] max-w-[900px] justify-between items-end pb-12 mt-8">
             <div>
-              <h4 className="text-3xl font-semibold text-gray-600 ">
+              <h4 className="lg:text-3xl sm:text-xl font-semibold text-gray-600 ">
                 Personal information
               </h4>
             </div>
