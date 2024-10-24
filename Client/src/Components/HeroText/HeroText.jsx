@@ -15,7 +15,7 @@ const HeroText = () => {
       </h1>
 
       <p
-        className={`mt-1 text-lg  ${
+        className={`mt-1 lg:text-lg sm:text-sm ${
           theme === "light" ? "text-gray-800" : "text-gray-300"
         }`}
       >

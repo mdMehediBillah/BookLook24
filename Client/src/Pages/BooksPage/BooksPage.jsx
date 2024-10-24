@@ -24,20 +24,20 @@ const BooksPage = () => {
       <NavigationComponent />
       <div className="max-w-screen-lg mx-auto flex justify-between">
         <GoBackComponent />
-        <div className="py-1 px-3 font-semibold">
+        {/* <div className="py-1 px-3 font-semibold">
           <h4
-            className={`text-lg font-bold line-clamp-1 ${
+            className={`md:text-lg sm:text-sm font-bold line-clamp-1 ${
               theme === "light" ? "text-gray-800" : "text-gray-300"
             }`}
           >
             {bookshelf?.name}
           </h4>
-        </div>
+        </div> */}
       </div>
 
-      <section className="max-w-screen-lg mx-auto mt-4">
+      <section className="max-w-screen-lg mx-auto mt-4 p-4">
         <h2
-          className={`text-2xl font-bold  pt-4 pb-8 ${
+          className={`lg:text-2xl sm:text-md font-bold  pt-4 pb-8 ${
             theme === "light" ? "text-gray-800" : "text-gray-300"
           }`}
         >

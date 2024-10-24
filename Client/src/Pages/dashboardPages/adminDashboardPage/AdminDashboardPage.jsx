@@ -31,15 +31,15 @@ const AdminDashboardPage = () => {
         </h4>
 
         <div
-          className={`flex gap-1 rounded-lg shadow-lg justify-between w-full ${
+          className={`dasboardClass  rounded-lg shadow-lg justify-between w-full ${
             theme === "light" ? "bg-gray-100" : "bg-gray-700"
           }`}
         >
-          <div className="p-2">
+          <div className="p-2 ">
             <AdminSidebar isActive={isActive} setIsActive={setIsActive} />
           </div>
 
-          <div className="p-2">
+          <div className="p-2 ">
             <DashboardSummary isActive={isActive} />
           </div>
         </div>

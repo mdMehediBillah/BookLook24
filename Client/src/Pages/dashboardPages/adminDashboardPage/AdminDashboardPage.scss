@@ -27,3 +27,16 @@
     }
   }
 }
+
+.dasboardClass {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  column-gap: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .dasboardClass {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}

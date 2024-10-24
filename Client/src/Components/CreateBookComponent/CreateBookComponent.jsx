@@ -97,7 +97,7 @@ const CreateBookComponent = () => {
         {error && <p className="text-red-500 text-center">{error}</p>}
         <form
           onSubmit={handleSubmit}
-          className="max-w-[600px] min-w-[380px] mx-auto p-4 bg-cyan-800 rounded-lg text-white"
+          className="max-w-[600px]  mx-auto p-4 bg-cyan-800 rounded-lg text-white"
         >
           <div className="flex flex-col mb-4">
             <label className="text-sm text-white mb-1">Title</label>
@@ -154,7 +154,7 @@ const CreateBookComponent = () => {
             />
           </div>
 
-          <div className="flex justify-between items-center mb-4">
+          <div className="flex justify-between items-center mb-4 gap-2">
             <div className="flex flex-col">
               <label className="text-sm text-white">Upload Photo</label>
               <input
